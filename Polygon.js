@@ -4,7 +4,13 @@ class Polygon {
     {
       this.points = [] ; 
       this.id = id ; 
+      //print( id + ' region polygon created.');
       this.title = title ; 
+      this.color = {} ; 
+      this.color.r = 255 ; 
+      this.color.g = 255 ; 
+      this.color.b = 255 ;  
+      this.alpha = 128 ;
     }
   
     loadVertices( arr )
@@ -12,8 +18,6 @@ class Polygon {
       this.points = [] ; 
       let sumX = 0 ; 
       let sumY = 0 ;
-      
-  
       let skip = 2 ; 
       for ( let i = 0 ; i < arr.length ; i+=(2*skip) )
       {
@@ -29,13 +33,13 @@ class Polygon {
     {
       fill( 255 ,0 , 0) ; 
       color( 255, 0 , 0 );
-      ellipse( this.centerPoint.x , this.points[0].y , 25 );
+      ellipse( this.points[0].x , this.points[0].y , 10 );
     }
     draw() 
     {
 
-      fill( 255 , 255 , 255 , 125 );
-      //color( 255 , 255 , 255 , 25 );
+      fill( this.color.r , this.color.g ,this.color.b , this.alpha );
+      color( this.color.r , this.color.g , this.color.b );
       //blendMode(MULTIPLY);
       beginShape();
       for (let i = 0; i < this.points.length ; i++ )

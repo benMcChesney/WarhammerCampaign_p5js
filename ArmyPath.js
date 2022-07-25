@@ -13,6 +13,7 @@ class ArmyPath {
     this.id = id ;  
     this.name = name ; 
     this.color = color ;
+    print('army path color is ' , color ) ; 
   }
 
   add_vertex( x , y , radius , turn_num )
@@ -76,9 +77,19 @@ class ArmyPath {
     }
 
   }
-  // Display the Bubble
+
   draw( frameCount , maxTurn ) {
-    color(this.color)
+
+    if ( this.color.r != null )
+    {
+      fill(this.color.r , this.color.g , this.color.b );
+      color(this.color.r , this.color.g , this.color.b );
+    }
+    else ( this.color != null )
+    {
+      fill( this.color );
+      color( this.color );
+    }
     stroke(this.color);
     
     let tail = 15 ; 
@@ -108,7 +119,7 @@ class ArmyPath {
         strokeWeight( map ( this.obj_array[ i ].radius , 0 , 20000 , 3, 10));
 
         // if a large position jump AND loss of most unit strength - then we assume army lost
-        if ( d < 125  ) //&& strength_delta <= .5 )
+        if ( d < 100  ) //&& strength_delta <= .5 )
         {
         line( this.obj_array[ i - 1 ].x 
             , this.obj_array[ i - 1 ].y

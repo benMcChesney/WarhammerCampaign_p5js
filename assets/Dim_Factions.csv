@@ -1,0 +1,349 @@
+id,game_source,dlc_source,faction,lord,faction_nk,factionLabel
+231,wh2,main,brt,knights of origo,wh2_main_brt_knights_of_origo,Bretonnia
+232,wh2,main,brt,knights of the flame,wh2_main_brt_knights_of_the_flame,Bretonnia
+233,wh2,main,brt,thegans crusaders,wh2_main_brt_thegans_crusaders,Bretonnia
+234,wh2,main,bst,blooded axe,wh2_main_bst_blooded_axe,Beastman
+235,wh2,main,bst,blooded axe brayherd,wh2_main_bst_blooded_axe_brayherd,Beastman
+236,wh2,main,bst,manblight,wh2_main_bst_manblight,Beastman
+237,wh2,main,bst,manblight brayherd,wh2_main_bst_manblight_brayherd,Beastman
+238,wh2,main,bst,ripper horn,wh2_main_bst_ripper_horn,Beastman
+239,wh2,main,bst,ripper horn brayherd,wh2_main_bst_ripper_horn_brayherd,Beastman
+240,wh2,main,bst,shadowgor,wh2_main_bst_shadowgor,Beastman
+241,wh2,main,bst,shadowgor brayherd,wh2_main_bst_shadowgor_brayherd,Beastman
+242,wh2,main,chs,chaos incursion def,wh2_main_chs_chaos_incursion_def,Warriors of Chaos
+243,wh2,main,chs,chaos incursion hef,wh2_main_chs_chaos_incursion_hef,Warriors of Chaos
+244,wh2,main,chs,chaos incursion lzd,wh2_main_chs_chaos_incursion_lzd,Warriors of Chaos
+245,wh2,main,def,bleak holds,wh2_main_def_bleak_holds,Dark Elves
+246,wh2,main,def,clar karond,wh2_main_def_clar_karond,Dark Elves
+247,wh2,main,def,cult of excess,wh2_main_def_cult_of_excess,Dark Elves
+248,wh2,main,def,cult of pleasure,wh2_main_def_cult_of_pleasure,Dark Elves
+249,wh2,main,def,cult of pleasure separatists,wh2_main_def_cult_of_pleasure_separatists,Dark Elves
+250,wh2,main,def,dark elves qb1,wh2_main_def_dark_elves_qb1,Dark Elves
+251,wh2,main,def,dark elves qb2,wh2_main_def_dark_elves_qb2,Dark Elves
+252,wh2,main,def,dark elves qb3,wh2_main_def_dark_elves_qb3,Dark Elves
+253,wh2,main,def,dark elves qb4,wh2_main_def_dark_elves_qb4,Dark Elves
+254,wh2,main,def,deadwood sentinels,wh2_main_def_deadwood_sentinels,Dark Elves
+255,wh2,main,def,ghrond,wh2_main_def_ghrond,Dark Elves
+256,wh2,main,def,hag graef,wh2_main_def_hag_graef,Dark Elves
+257,wh2,main,def,hag graef separatists,wh2_main_def_hag_graef_separatists,Dark Elves
+258,wh2,main,def,har ganeth,wh2_main_def_har_ganeth,Dark Elves
+259,wh2,main,def,har ganeth separatists,wh2_main_def_har_ganeth_separatists,Dark Elves
+260,wh2,main,def,karond kar,wh2_main_def_karond_kar,Dark Elves
+261,wh2,main,def,naggarond,wh2_main_def_naggarond,Dark Elves
+262,wh2,main,def,naggarond separatists,wh2_main_def_naggarond_separatists,Dark Elves
+263,wh2,main,def,scourge of khaine,wh2_main_def_scourge_of_khaine,Dark Elves
+264,wh2,main,def,ssildra tor,wh2_main_def_ssildra_tor,Dark Elves
+265,wh2,main,def,the forgebound,wh2_main_def_the_forgebound,Dark Elves
+266,wh2,main,dwf,greybeards prospectors,wh2_main_dwf_greybeards_prospectors,Dwarves
+267,wh2,main,dwf,karak zorn,wh2_main_dwf_karak_zorn,Dwarves
+268,wh2,main,dwf,spine of sotek dwarfs,wh2_main_dwf_spine_of_sotek_dwarfs,Dwarves
+269,wh2,main,emp,new world colonies,wh2_main_emp_new_world_colonies,Empire
+270,wh2,main,emp,sudenburg,wh2_main_emp_sudenburg,Empire
+271,wh2,main,grn,arachnos,wh2_main_grn_arachnos,Greenskins
+272,wh2,main,grn,blue vipers,wh2_main_grn_blue_vipers,Greenskins
+273,wh2,main,hef,avelorn,wh2_main_hef_avelorn,High Elves
+274,wh2,main,hef,caledor,wh2_main_hef_caledor,High Elves
+275,wh2,main,hef,chrace,wh2_main_hef_chrace,High Elves
+276,wh2,main,hef,cothique,wh2_main_hef_cothique,High Elves
+277,wh2,main,hef,eataine,wh2_main_hef_eataine,High Elves
+278,wh2,main,hef,ellyrion,wh2_main_hef_ellyrion,High Elves
+279,wh2,main,hef,high elves qb1,wh2_main_hef_high_elves_qb1,High Elves
+280,wh2,main,hef,high elves qb2,wh2_main_hef_high_elves_qb2,High Elves
+281,wh2,main,hef,high elves qb3,wh2_main_hef_high_elves_qb3,High Elves
+282,wh2,main,hef,nagarythe,wh2_main_hef_nagarythe,High Elves
+283,wh2,main,hef,order of loremasters,wh2_main_hef_order_of_loremasters,High Elves
+284,wh2,main,hef,saphery,wh2_main_hef_saphery,High Elves
+285,wh2,main,hef,tiranoc,wh2_main_hef_tiranoc,High Elves
+286,wh2,main,hef,yvresse,wh2_main_hef_yvresse,High Elves
+287,wh2,main,lzd,hexoatl,wh2_main_lzd_hexoatl,Lizardmen
+288,wh2,main,lzd,itza,wh2_main_lzd_itza,Lizardmen
+289,wh2,main,lzd,last defenders,wh2_main_lzd_last_defenders,Lizardmen
+290,wh2,main,lzd,lizardmen qb1,wh2_main_lzd_lizardmen_qb1,Lizardmen
+291,wh2,main,lzd,lizardmen qb2,wh2_main_lzd_lizardmen_qb2,Lizardmen
+292,wh2,main,lzd,lizardmen qb3,wh2_main_lzd_lizardmen_qb3,Lizardmen
+293,wh2,main,lzd,sentinels of xeti,wh2_main_lzd_sentinels_of_xeti,Lizardmen
+294,wh2,main,lzd,teotiqua,wh2_main_lzd_teotiqua,Lizardmen
+295,wh2,main,lzd,tlaqua,wh2_main_lzd_tlaqua,Lizardmen
+296,wh2,main,lzd,tlaxtlan,wh2_main_lzd_tlaxtlan,Lizardmen
+297,wh2,main,lzd,xlanhuapec,wh2_main_lzd_xlanhuapec,Lizardmen
+298,wh2,main,nor,aghol,wh2_main_nor_aghol,Norsca
+299,wh2,main,nor,mung,wh2_main_nor_mung,Norsca
+300,wh2,main,nor,skeggi,wh2_main_nor_skeggi,Norsca
+301,wh2,main,rogue,abominations,wh2_main_rogue_abominations,Rogue Armies
+302,wh2,main,rogue,beastcatchas,wh2_main_rogue_beastcatchas,Rogue Armies
+303,wh2,main,rogue,bernhoffs brigands,wh2_main_rogue_bernhoffs_brigands,Rogue Armies
+304,wh2,main,rogue,black spider tribe,wh2_main_rogue_black_spider_tribe,Rogue Armies
+305,wh2,main,rogue,boneclubbers tribe,wh2_main_rogue_boneclubbers_tribe,Rogue Armies
+306,wh2,main,rogue,celestial storm,wh2_main_rogue_celestial_storm,Rogue Armies
+307,wh2,main,rogue,college of pyrotechnics,wh2_main_rogue_college_of_pyrotechnics,Rogue Armies
+308,wh2,main,rogue,def chs vashnaar,wh2_main_rogue_def_chs_vashnaar,Rogue Armies
+309,wh2,main,rogue,def mengils manflayers,wh2_main_rogue_def_mengils_manflayers,Rogue Armies
+310,wh2,main,rogue,doomseekers,wh2_main_rogue_doomseekers,Rogue Armies
+311,wh2,main,rogue,doomseekers qb1,wh2_main_rogue_doomseekers_qb1,Rogue Armies
+312,wh2,main,rogue,gerhardts mercenaries,wh2_main_rogue_gerhardts_mercenaries,Rogue Armies
+313,wh2,main,rogue,gerhardts mercenaries qb1,wh2_main_rogue_gerhardts_mercenaries_qb1,Rogue Armies
+314,wh2,main,rogue,hef tor elithis,wh2_main_rogue_hef_tor_elithis,Rogue Armies
+315,wh2,main,rogue,hung warband,wh2_main_rogue_hung_warband,Rogue Armies
+316,wh2,main,rogue,jerrods errantry,wh2_main_rogue_jerrods_errantry,Rogue Armies
+317,wh2,main,rogue,morrsliebs howlers,wh2_main_rogue_morrsliebs_howlers,Rogue Armies
+318,wh2,main,rogue,pirates of trantio,wh2_main_rogue_pirates_of_trantio,Rogue Armies
+319,wh2,main,rogue,scourge of aquitaine,wh2_main_rogue_scourge_of_aquitaine,Rogue Armies
+320,wh2,main,rogue,stuff snatchers,wh2_main_rogue_stuff_snatchers,Rogue Armies
+321,wh2,main,rogue,troll skullz,wh2_main_rogue_troll_skullz,Rogue Armies
+322,wh2,main,rogue,vmp heirs of mourkain,wh2_main_rogue_vmp_heirs_of_mourkain,Rogue Armies
+323,wh2,main,rogue,wef hunters of kurnous,wh2_main_rogue_wef_hunters_of_kurnous,Rogue Armies
+324,wh2,main,rogue,wrath of nature,wh2_main_rogue_wrath_of_nature,Rogue Armies
+325,wh2,main,skv,clan eshin,wh2_main_skv_clan_eshin,Skaven
+326,wh2,main,skv,clan eshin separatists,wh2_main_skv_clan_eshin_separatists,Skaven
+327,wh2,main,skv,clan gnaw,wh2_main_skv_clan_gnaw,Skaven
+328,wh2,main,skv,clan mordkin,wh2_main_skv_clan_mordkin,Skaven
+329,wh2,main,skv,clan mors,wh2_main_skv_clan_mors,Skaven
+330,wh2,main,skv,clan mors separatists,wh2_main_skv_clan_mors_separatists,Skaven
+331,wh2,main,skv,clan moulder,wh2_main_skv_clan_moulder,Skaven
+332,wh2,main,skv,clan moulder separatists,wh2_main_skv_clan_moulder_separatists,Skaven
+333,wh2,main,skv,clan pestilens,wh2_main_skv_clan_pestilens,Skaven
+334,wh2,main,skv,clan pestilens separatists,wh2_main_skv_clan_pestilens_separatists,Skaven
+335,wh2,main,skv,clan septik,wh2_main_skv_clan_septik,Skaven
+336,wh2,main,skv,clan skryre separatists,wh2_main_skv_clan_skryre_separatists,Skaven
+337,wh2,main,skv,clan skyre,wh2_main_skv_clan_skyre,Skaven
+338,wh2,main,skv,clan spittel,wh2_main_skv_clan_spittel,Skaven
+339,wh2,main,skv,skaven qb1,wh2_main_skv_skaven_qb1,Skaven
+340,wh2,main,skv,skaven qb2,wh2_main_skv_skaven_qb2,Skaven
+341,wh2,main,skv,skaven qb3,wh2_main_skv_skaven_qb3,Skaven
+342,wh2,main,skv,skaven qb4,wh2_main_skv_skaven_qb4,Skaven
+343,wh2,main,vmp,necrarch brotherhood,wh2_main_vmp_necrarch_brotherhood,Vampires Counts
+344,wh2,main,vmp,strygos empire,wh2_main_vmp_strygos_empire,Vampires Counts
+345,wh2,main,vmp,the silver host,wh2_main_vmp_the_silver_host,Vampires Counts
+346,wh2,main,wef,bowmen of oreon,wh2_main_wef_bowmen_of_oreon,Wood Elves
+36,wh,main,brt,artois,wh_main_brt_artois,Bretonnia
+37,wh,main,brt,bastonne,wh_main_brt_bastonne,Bretonnia
+38,wh,main,brt,bordeleaux,wh_main_brt_bordeleaux,Bretonnia
+39,wh,main,brt,bretonnia,wh_main_brt_bretonnia,Bretonnia
+40,wh,main,brt,bretonnia qb1,wh_main_brt_bretonnia_qb1,Bretonnia
+41,wh,main,brt,bretonnia qb2,wh_main_brt_bretonnia_qb2,Bretonnia
+42,wh,main,brt,bretonnia qb3,wh_main_brt_bretonnia_qb3,Bretonnia
+43,wh,main,brt,carcassonne,wh_main_brt_carcassonne,Bretonnia
+44,wh,main,brt,lyonesse,wh_main_brt_lyonesse,Bretonnia
+45,wh,main,brt,parravon,wh_main_brt_parravon,Bretonnia
+46,wh,main,chs,chaos,wh_main_chs_chaos,Warriors of Chaos
+47,wh,main,chs,chaos qb1,wh_main_chs_chaos_qb1,Warriors of Chaos
+48,wh,main,chs,chaos qb2,wh_main_chs_chaos_qb2,Warriors of Chaos
+49,wh,main,chs,chaos qb3,wh_main_chs_chaos_qb3,Warriors of Chaos
+50,wh,main,chs,chaos separatists,wh_main_chs_chaos_separatists,Warriors of Chaos
+51,wh,main,dwf,barak varr,wh_main_dwf_barak_varr,Dwarves
+52,wh,main,dwf,dwarfs,wh_main_dwf_dwarfs,Dwarves
+53,wh,main,dwf,dwarfs qb1,wh_main_dwf_dwarfs_qb1,Dwarves
+54,wh,main,dwf,dwarfs qb2,wh_main_dwf_dwarfs_qb2,Dwarves
+55,wh,main,dwf,dwarfs qb3,wh_main_dwf_dwarfs_qb3,Dwarves
+56,wh,main,dwf,dwarfs seperatists qb1,wh_main_dwf_dwarfs_seperatists_qb1,Dwarves
+57,wh,main,dwf,dwarfs seperatists qb2,wh_main_dwf_dwarfs_seperatists_qb2,Dwarves
+58,wh,main,dwf,dwarfs seperatists qb3,wh_main_dwf_dwarfs_seperatists_qb3,Dwarves
+59,wh,main,dwf,dwarfs seperatists qb4,wh_main_dwf_dwarfs_seperatists_qb4,Dwarves
+60,wh,main,dwf,karak azul,wh_main_dwf_karak_azul,Dwarves
+61,wh,main,dwf,karak hirn,wh_main_dwf_karak_hirn,Dwarves
+62,wh,main,dwf,karak izor,wh_main_dwf_karak_izor,Dwarves
+63,wh,main,dwf,karak kadrin,wh_main_dwf_karak_kadrin,Dwarves
+64,wh,main,dwf,karak norn,wh_main_dwf_karak_norn,Dwarves
+65,wh,main,dwf,karak ziflin,wh_main_dwf_karak_ziflin,Dwarves
+66,wh,main,dwf,kraka drak,wh_main_dwf_kraka_drak,Dwarves
+67,wh,main,dwf,zhufbar,wh_main_dwf_zhufbar,Dwarves
+68,wh,main,emp,averland,wh_main_emp_averland,Empire
+69,wh,main,emp,empire,wh_main_emp_empire,Empire
+70,wh,main,emp,empire qb1,wh_main_emp_empire_qb1,Empire
+71,wh,main,emp,empire qb2,wh_main_emp_empire_qb2,Empire
+72,wh,main,emp,empire qb3,wh_main_emp_empire_qb3,Empire
+73,wh,main,emp,empire qb4,wh_main_emp_empire_qb4,Empire
+74,wh,main,emp,empire separatists,wh_main_emp_empire_separatists,Empire
+75,wh,main,emp,hochland,wh_main_emp_hochland,Empire
+76,wh,main,emp,marienburg,wh_main_emp_marienburg,Empire
+77,wh,main,emp,middenland,wh_main_emp_middenland,Empire
+78,wh,main,emp,nordland,wh_main_emp_nordland,Empire
+79,wh,main,emp,ostermark,wh_main_emp_ostermark,Empire
+80,wh,main,emp,ostland,wh_main_emp_ostland,Empire
+81,wh,main,emp,stirland,wh_main_emp_stirland,Empire
+82,wh,main,emp,talabecland,wh_main_emp_talabecland,Empire
+83,wh,main,emp,wissenland,wh_main_emp_wissenland,Empire
+84,wh,main,grn,black venom,wh_main_grn_black_venom,Greenskins
+85,wh,main,grn,bloody spearz,wh_main_grn_bloody_spearz,Greenskins
+86,wh,main,grn,broken nose,wh_main_grn_broken_nose,Greenskins
+87,wh,main,grn,crooked moon,wh_main_grn_crooked_moon,Greenskins
+88,wh,main,grn,greenskins,wh_main_grn_greenskins,Greenskins
+89,wh,main,grn,greenskins qb1,wh_main_grn_greenskins_qb1,Greenskins
+90,wh,main,grn,greenskins qb2,wh_main_grn_greenskins_qb2,Greenskins
+91,wh,main,grn,greenskins qb3,wh_main_grn_greenskins_qb3,Greenskins
+92,wh,main,grn,greenskins qb4,wh_main_grn_greenskins_qb4,Greenskins
+93,wh,main,grn,necksnappers,wh_main_grn_necksnappers,Greenskins
+94,wh,main,grn,orcs of the bloody hand,wh_main_grn_orcs_of_the_bloody_hand,Greenskins
+95,wh,main,grn,red eye,wh_main_grn_red_eye,Greenskins
+96,wh,main,grn,red fangs,wh_main_grn_red_fangs,Greenskins
+97,wh,main,grn,scabby eye,wh_main_grn_scabby_eye,Greenskins
+98,wh,main,grn,skull-takerz,wh_main_grn_skull-takerz,Greenskins
+99,wh,main,grn,skullsmasherz,wh_main_grn_skullsmasherz,Greenskins
+100,wh,main,grn,teef snatchaz,wh_main_grn_teef_snatchaz,Greenskins
+101,wh,main,grn,top knotz,wh_main_grn_top_knotz,Greenskins
+102,wh,main,ksl,kislev,wh_main_ksl_kislev,Kislev
+103,wh,main,nor,aesling,wh_main_nor_aesling,Norsca
+104,wh,main,nor,baersonling,wh_main_nor_baersonling,Norsca
+105,wh,main,nor,bjornling,wh_main_nor_bjornling,Norsca
+106,wh,main,nor,graeling,wh_main_nor_graeling,Norsca
+107,wh,main,nor,norsca qb1,wh_main_nor_norsca_qb1,Norsca
+108,wh,main,nor,norsca qb2,wh_main_nor_norsca_qb2,Norsca
+109,wh,main,nor,norsca qb3,wh_main_nor_norsca_qb3,Norsca
+110,wh,main,nor,sarl,wh_main_nor_sarl,Norsca
+111,wh,main,nor,skaeling,wh_main_nor_skaeling,Norsca
+112,wh,main,nor,varg,wh_main_nor_varg,Norsca
+113,wh,main,teb,border princes,wh_main_teb_border_princes,The Southern Realms
+114,wh,main,teb,estalia,wh_main_teb_estalia,The Southern Realms
+115,wh,main,teb,tilea,wh_main_teb_tilea,The Southern Realms
+116,wh,main,vmp,mousillon,wh_main_vmp_mousillon,Vampires Counts
+117,wh,main,vmp,rival sylvanian vamps,wh_main_vmp_rival_sylvanian_vamps,Vampires Counts
+118,wh,main,vmp,schwartzhafen,wh_main_vmp_schwartzhafen,Vampires Counts
+119,wh,main,vmp,vampire counts,wh_main_vmp_vampire_counts,Vampires Counts
+120,wh,main,vmp,vampire counts qb1,wh_main_vmp_vampire_counts_qb1,Vampires Counts
+121,wh,main,vmp,vampire counts qb2,wh_main_vmp_vampire_counts_qb2,Vampires Counts
+122,wh,main,vmp,vampire counts qb3,wh_main_vmp_vampire_counts_qb3,Vampires Counts
+1,NULL,NULL,NULL,NULL,NULL,NULL
+2,wh,dlc03,bst,beastmen,wh_dlc03_bst_beastmen,Beastman
+3,wh,dlc03,bst,beastmen ally,wh_dlc03_bst_beastmen_ally,Beastman
+4,wh,dlc03,bst,beastmen brayherd,wh_dlc03_bst_beastmen_brayherd,Beastman
+5,wh,dlc03,bst,beastmen chaos,wh_dlc03_bst_beastmen_chaos,Beastman
+6,wh,dlc03,bst,beastmen chaos brayherd,wh_dlc03_bst_beastmen_chaos_brayherd,Beastman
+7,wh,dlc03,bst,beastmen qb1,wh_dlc03_bst_beastmen_qb1,Beastman
+8,wh,dlc03,bst,beastmen qb2,wh_dlc03_bst_beastmen_qb2,Beastman
+9,wh,dlc03,bst,beastmen qb3,wh_dlc03_bst_beastmen_qb3,Beastman
+10,wh,dlc03,bst,jagged horn,wh_dlc03_bst_jagged_horn,Beastman
+11,wh,dlc03,bst,jagged horn brayherd,wh_dlc03_bst_jagged_horn_brayherd,Beastman
+12,wh,dlc03,bst,redhorn,wh_dlc03_bst_redhorn,Beastman
+13,wh,dlc03,bst,redhorn brayherd,wh_dlc03_bst_redhorn_brayherd,Beastman
+14,wh,dlc05,bst,morghur herd,wh_dlc05_bst_morghur_herd,Beastman
+15,wh,dlc05,wef,argwylon,wh_dlc05_wef_argwylon,Wood Elves
+16,wh,dlc05,wef,torgovann,wh_dlc05_wef_torgovann,Wood Elves
+17,wh,dlc05,wef,wood elves,wh_dlc05_wef_wood_elves,Wood Elves
+18,wh,dlc05,wef,wood elves qb1,wh_dlc05_wef_wood_elves_qb1,Wood Elves
+19,wh,dlc05,wef,wood elves qb2,wh_dlc05_wef_wood_elves_qb2,Wood Elves
+20,wh,dlc05,wef,wood elves qb3,wh_dlc05_wef_wood_elves_qb3,Wood Elves
+21,wh,dlc05,wef,wydrioth,wh_dlc05_wef_wydrioth,Wood Elves
+22,wh,dlc08,chs,chaos challenger khorne,wh_dlc08_chs_chaos_challenger_khorne,Warriors of Chaos
+23,wh,dlc08,chs,chaos challenger khorne qb,wh_dlc08_chs_chaos_challenger_khorne_qb,Warriors of Chaos
+24,wh,dlc08,chs,chaos challenger nurgle,wh_dlc08_chs_chaos_challenger_nurgle,Warriors of Chaos
+25,wh,dlc08,chs,chaos challenger nurgle qb,wh_dlc08_chs_chaos_challenger_nurgle_qb,Warriors of Chaos
+26,wh,dlc08,chs,chaos challenger slaanesh,wh_dlc08_chs_chaos_challenger_slaanesh,Warriors of Chaos
+27,wh,dlc08,chs,chaos challenger slaanesh qb,wh_dlc08_chs_chaos_challenger_slaanesh_qb,Warriors of Chaos
+28,wh,dlc08,chs,chaos challenger tzeentch,wh_dlc08_chs_chaos_challenger_tzeentch,Warriors of Chaos
+29,wh,dlc08,chs,chaos challenger tzeentch qb,wh_dlc08_chs_chaos_challenger_tzeentch_qb,Warriors of Chaos
+30,wh,dlc08,nor,goromadny tribe,wh_dlc08_nor_goromadny_tribe,Norsca
+31,wh,dlc08,nor,helspire tribe,wh_dlc08_nor_helspire_tribe,Norsca
+32,wh,dlc08,nor,naglfarlings,wh_dlc08_nor_naglfarlings,Norsca
+33,wh,dlc08,nor,norsca,wh_dlc08_nor_norsca,Norsca
+34,wh,dlc08,nor,vanaheimlings,wh_dlc08_nor_vanaheimlings,Norsca
+35,wh,dlc08,nor,wintertooth,wh_dlc08_nor_wintertooth,Norsca
+123,wh2,dlc09,rogue,black creek raiders,wh2_dlc09_rogue_black_creek_raiders,Rogue Armies
+124,wh2,dlc09,rogue,dwellers of zardok,wh2_dlc09_rogue_dwellers_of_zardok,Rogue Armies
+125,wh2,dlc09,rogue,eyes of the jungle,wh2_dlc09_rogue_eyes_of_the_jungle,Rogue Armies
+126,wh2,dlc09,rogue,pilgrims of myrmidia,wh2_dlc09_rogue_pilgrims_of_myrmidia,Rogue Armies
+127,wh2,dlc09,skv,clan rictus,wh2_dlc09_skv_clan_rictus,Skaven
+128,wh2,dlc09,skv,clan rictus separatists,wh2_dlc09_skv_clan_rictus_separatists,Skaven
+129,wh2,dlc09,tmb,dune kingdoms,wh2_dlc09_tmb_dune_kingdoms,Tomb Kings
+130,wh2,dlc09,tmb,exiles of nehek,wh2_dlc09_tmb_exiles_of_nehek,Tomb Kings
+131,wh2,dlc09,tmb,followers of nagash,wh2_dlc09_tmb_followers_of_nagash,Tomb Kings
+132,wh2,dlc09,tmb,khemri,wh2_dlc09_tmb_khemri,Tomb Kings
+133,wh2,dlc09,tmb,lybaras,wh2_dlc09_tmb_lybaras,Tomb Kings
+134,wh2,dlc09,tmb,numas,wh2_dlc09_tmb_numas,Tomb Kings
+135,wh2,dlc09,tmb,rakaph dynasty,wh2_dlc09_tmb_rakaph_dynasty,Tomb Kings
+136,wh2,dlc09,tmb,the sentinels,wh2_dlc09_tmb_the_sentinels,Tomb Kings
+137,wh2,dlc09,tmb,tombking qb exiles of nehek,wh2_dlc09_tmb_tombking_qb_exiles_of_nehek,Tomb Kings
+138,wh2,dlc09,tmb,tombking qb followers of nagash,wh2_dlc09_tmb_tombking_qb_followers_of_nagash,Tomb Kings
+139,wh2,dlc09,tmb,tombking qb khemri,wh2_dlc09_tmb_tombking_qb_khemri,Tomb Kings
+140,wh2,dlc09,tmb,tombking qb lybaras,wh2_dlc09_tmb_tombking_qb_lybaras,Tomb Kings
+141,wh2,dlc09,tmb,tombking qb1,wh2_dlc09_tmb_tombking_qb1,Tomb Kings
+142,wh2,dlc09,tmb,tombking qb2,wh2_dlc09_tmb_tombking_qb2,Tomb Kings
+143,wh2,dlc09,tmb,tombking qb3,wh2_dlc09_tmb_tombking_qb3,Tomb Kings
+144,wh2,dlc09,tmb,tombking qb4,wh2_dlc09_tmb_tombking_qb4,Tomb Kings
+145,wh2,dlc10,def,blood voyage,wh2_dlc10_def_blood_voyage,Dark Elves
+146,wh2,dlc11,brt,bretonnia dil,wh2_dlc11_brt_bretonnia_dil,Bretonnia
+147,wh2,dlc11,cst,harpoon the sunken land corsairs,wh2_dlc11_cst_harpoon_the_sunken_land_corsairs,Vampire Coast
+148,wh2,dlc11,cst,noctilus,wh2_dlc11_cst_noctilus,Vampire Coast
+149,wh2,dlc11,cst,noctilus separatists,wh2_dlc11_cst_noctilus_separatists,Vampire Coast
+150,wh2,dlc11,cst,pirates of sartosa,wh2_dlc11_cst_pirates_of_sartosa,Vampire Coast
+151,wh2,dlc11,cst,pirates of sartosa separatists,wh2_dlc11_cst_pirates_of_sartosa_separatists,Vampire Coast
+152,wh2,dlc11,cst,rogue bleak coast buccaneers,wh2_dlc11_cst_rogue_bleak_coast_buccaneers,Vampire Coast
+153,wh2,dlc11,cst,rogue boyz of the forbidden coast,wh2_dlc11_cst_rogue_boyz_of_the_forbidden_coast,Vampire Coast
+154,wh2,dlc11,cst,rogue freebooters of port royale,wh2_dlc11_cst_rogue_freebooters_of_port_royale,Vampire Coast
+155,wh2,dlc11,cst,rogue grey point scuttlers,wh2_dlc11_cst_rogue_grey_point_scuttlers,Vampire Coast
+156,wh2,dlc11,cst,rogue terrors of the dark straights,wh2_dlc11_cst_rogue_terrors_of_the_dark_straights,Vampire Coast
+157,wh2,dlc11,cst,rogue the churning gulf raiders,wh2_dlc11_cst_rogue_the_churning_gulf_raiders,Vampire Coast
+158,wh2,dlc11,cst,rogue tyrants of the black ocean,wh2_dlc11_cst_rogue_tyrants_of_the_black_ocean,Vampire Coast
+159,wh2,dlc11,cst,shanty dragon spine privateers,wh2_dlc11_cst_shanty_dragon_spine_privateers,Vampire Coast
+160,wh2,dlc11,cst,shanty middle sea brigands,wh2_dlc11_cst_shanty_middle_sea_brigands,Vampire Coast
+161,wh2,dlc11,cst,shanty shark straight seadogs,wh2_dlc11_cst_shanty_shark_straight_seadogs,Vampire Coast
+162,wh2,dlc11,cst,the drowned,wh2_dlc11_cst_the_drowned,Vampire Coast
+163,wh2,dlc11,cst,the drowned separatists,wh2_dlc11_cst_the_drowned_separatists,Vampire Coast
+164,wh2,dlc11,cst,vampire coast,wh2_dlc11_cst_vampire_coast,Vampire Coast
+165,wh2,dlc11,cst,vampire coast encounters,wh2_dlc11_cst_vampire_coast_encounters,Vampire Coast
+166,wh2,dlc11,cst,vampire coast qb1,wh2_dlc11_cst_vampire_coast_qb1,Vampire Coast
+167,wh2,dlc11,cst,vampire coast qb2,wh2_dlc11_cst_vampire_coast_qb2,Vampire Coast
+168,wh2,dlc11,cst,vampire coast qb3,wh2_dlc11_cst_vampire_coast_qb3,Vampire Coast
+169,wh2,dlc11,cst,vampire coast qb4,wh2_dlc11_cst_vampire_coast_qb4,Vampire Coast
+170,wh2,dlc11,cst,vampire coast rebels,wh2_dlc11_cst_vampire_coast_rebels,Vampire Coast
+171,wh2,dlc11,cst,vampire coast separatists,wh2_dlc11_cst_vampire_coast_separatists,Vampire Coast
+172,wh2,dlc11,def,dark elves dil,wh2_dlc11_def_dark_elves_dil,Dark Elves
+173,wh2,dlc11,def,the blessed dread,wh2_dlc11_def_the_blessed_dread,Dark Elves
+174,wh2,dlc11,def,the blessed dread separatists,wh2_dlc11_def_the_blessed_dread_separatists,Dark Elves
+175,wh2,dlc11,emp,empire dil,wh2_dlc11_emp_empire_dil,Empire
+176,wh2,dlc11,emp,empire qb5,wh2_dlc11_emp_empire_qb5,Empire
+177,wh2,dlc11,nor,norsca dil,wh2_dlc11_nor_norsca_dil,Norsca
+178,wh2,dlc11,nor,norsca qb4,wh2_dlc11_nor_norsca_qb4,Norsca
+179,wh2,dlc11,vmp,the barrow legion,wh2_dlc11_vmp_the_barrow_legion,Vampires Counts
+180,wh2,dlc12,grn,leaf cutterz tribe,wh2_dlc12_grn_leaf_cutterz_tribe,Greenskins
+181,wh2,dlc12,lzd,cult of sotek,wh2_dlc12_lzd_cult_of_sotek,Lizardmen
+182,wh2,dlc12,skv,clan fester,wh2_dlc12_skv_clan_fester,Skaven
+183,wh2,dlc12,skv,clan mange,wh2_dlc12_skv_clan_mange,Skaven
+184,wh2,dlc13,bst,beastmen invasion,wh2_dlc13_bst_beastmen_invasion,Beastman
+185,wh2,dlc13,emp,golden order,wh2_dlc13_emp_golden_order,Empire
+186,wh2,dlc13,emp,the huntmarshals expedition,wh2_dlc13_emp_the_huntmarshals_expedition,Empire
+187,wh2,dlc13,grn,greenskins invasion,wh2_dlc13_grn_greenskins_invasion,Greenskins
+188,wh2,dlc13,lzd,avengers,wh2_dlc13_lzd_avengers,Lizardmen
+189,wh2,dlc13,lzd,defenders of the great plan,wh2_dlc13_lzd_defenders_of_the_great_plan,Lizardmen
+190,wh2,dlc13,lzd,spirits of the jungle,wh2_dlc13_lzd_spirits_of_the_jungle,Lizardmen
+191,wh2,dlc13,nor,norsca invasion,wh2_dlc13_nor_norsca_invasion,Norsca
+192,wh2,dlc13,skv,skaven invasion,wh2_dlc13_skv_skaven_invasion,Skaven
+193,wh2,dlc13,wef,laurelorn forest,wh2_dlc13_wef_laurelorn_forest,Wood Elves
+194,wh2,dlc14,brt,chevaliers de lyonesse,wh2_dlc14_brt_chevaliers_de_lyonesse,Bretonnia
+195,wh2,dlc14,grn,red cloud,wh2_dlc14_grn_red_cloud,Greenskins
+196,wh2,dlc14,lzd,itz itza tribe,wh2_dlc14_lzd_itz_itza_tribe,Lizardmen
+197,wh2,dlc14,skv,rictus clan nest,wh2_dlc14_skv_rictus_clan_nest,Skaven
+198,wh2,dlc15,dwf,clan helhein,wh2_dlc15_dwf_clan_helhein,Dwarves
+199,wh2,dlc15,grn,bonerattlaz,wh2_dlc15_grn_bonerattlaz,Greenskins
+200,wh2,dlc15,grn,broken axe,wh2_dlc15_grn_broken_axe,Greenskins
+201,wh2,dlc15,grn,skull crag,wh2_dlc15_grn_skull_crag,Greenskins
+202,wh2,dlc15,hef,dragon encounters,wh2_dlc15_hef_dragon_encounters,High Elves
+203,wh2,dlc15,hef,imrik,wh2_dlc15_hef_imrik,High Elves
+204,wh2,dlc15,skv,clan ferrik,wh2_dlc15_skv_clan_ferrik,Skaven
+205,wh2,dlc15,skv,clan kreepus,wh2_dlc15_skv_clan_kreepus,Skaven
+206,wh2,dlc15,skv,clan volkn,wh2_dlc15_skv_clan_volkn,Skaven
+207,wh2,dlc16,chs,acolytes of the keeper,wh2_dlc16_chs_acolytes_of_the_keeper,Warriors of Chaos
+208,wh2,dlc16,emp,colonist invasion,wh2_dlc16_emp_colonist_invasion,Empire
+209,wh2,dlc16,emp,empire invasion,wh2_dlc16_emp_empire_invasion,Empire
+210,wh2,dlc16,emp,empire qb8,wh2_dlc16_emp_empire_qb8,Empire
+211,wh2,dlc16,grn,creeping death,wh2_dlc16_grn_creeping_death,Greenskins
+212,wh2,dlc16,grn,naggaroth orcs,wh2_dlc16_grn_naggaroth_orcs,Greenskins
+213,wh2,dlc16,grn,savage invasion,wh2_dlc16_grn_savage_invasion,Greenskins
+214,wh2,dlc16,lzd,wardens of the living pools,wh2_dlc16_lzd_wardens_of_the_living_pools,Lizardmen
+215,wh2,dlc16,skv,clan gritus,wh2_dlc16_skv_clan_gritus,Skaven
+216,wh2,dlc16,vmp,lahmian sisterhood,wh2_dlc16_vmp_lahmian_sisterhood,Vampires Counts
+217,wh2,dlc16,wef,drycha,wh2_dlc16_wef_drycha,Wood Elves
+218,wh2,dlc16,wef,sisters of twilight,wh2_dlc16_wef_sisters_of_twilight,Wood Elves
+219,wh2,dlc16,wef,wood elves qb4,wh2_dlc16_wef_wood_elves_qb4,Wood Elves
+220,wh2,dlc16,wef,wood elves qb5,wh2_dlc16_wef_wood_elves_qb5,Wood Elves
+221,wh2,dlc16,wef,wood elves qb6,wh2_dlc16_wef_wood_elves_qb6,Wood Elves
+222,wh2,dlc16,wef,wood elves qb7,wh2_dlc16_wef_wood_elves_qb7,Wood Elves
+223,wh2,dlc17,bst,beastmen qb4,wh2_dlc17_bst_beastmen_qb4,Beastman
+224,wh2,dlc17,bst,beastmen qb5,wh2_dlc17_bst_beastmen_qb5,Beastman
+225,wh2,dlc17,bst,beastmen qb6,wh2_dlc17_bst_beastmen_qb6,Beastman
+226,wh2,dlc17,bst,malagor,wh2_dlc17_bst_malagor,Beastman
+227,wh2,dlc17,bst,taurox,wh2_dlc17_bst_taurox,Beastman
+228,wh2,dlc17,dwf,thorek ironbrow,wh2_dlc17_dwf_thorek_ironbrow,Dwarves
+229,wh2,dlc17,lzd,oxyotl,wh2_dlc17_lzd_oxyotl,Lizardmen
+230,wh2,dlc17,nor,deadwood ravagers,wh2_dlc17_nor_deadwood_ravagers,Norsca
+347,wh2,twa03,def,rakarth,wh2_twa03_def_rakarth,Dark Elves
+348,wh2,twa03,def,rakarth separatists,wh2_twa03_def_rakarth_separatists,Dark Elves
