@@ -32,14 +32,15 @@ class Polygon {
     debugDraw()
     {
       fill( 255 ,0 , 0) ; 
-      color( 255, 0 , 0 );
+      //color( 255, 0 , 0 );
       ellipse( this.points[0].x , this.points[0].y , 10 );
     }
     draw() 
     {
-
-      fill( this.color.r , this.color.g ,this.color.b , this.alpha );
-      color( this.color.r , this.color.g , this.color.b );
+      //blendMode( NORMAL ) ;
+      fill(  this.color.r , this.color.g ,this.color.b , this.alpha );
+      //color( this.color.r , this.color.g , this.color.b );
+      //color( 255 , 0 , 0 )
       //blendMode(MULTIPLY);
       beginShape();
       for (let i = 0; i < this.points.length ; i++ )

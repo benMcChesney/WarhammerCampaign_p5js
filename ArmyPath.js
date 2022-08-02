@@ -13,7 +13,7 @@ class ArmyPath {
     this.id = id ;  
     this.name = name ; 
     this.color = color ;
-    print('army path color is ' , color ) ; 
+    //print('army path color is ' , color ) ; 
   }
 
   add_vertex( x , y , radius , turn_num )
@@ -82,15 +82,15 @@ class ArmyPath {
 
     if ( this.color.r != null )
     {
-      fill(this.color.r , this.color.g , this.color.b );
-      color(this.color.r , this.color.g , this.color.b );
+      fill( color( this.color.r , this.color.g , this.color.b ) );
+      //color(this.color.r , this.color.g , this.color.b );
     }
-    else ( this.color != null )
-    {
-      fill( this.color );
-      color( this.color );
-    }
-    stroke(this.color);
+    //else ( this.color != null )
+    //{
+    //fill( this.color );
+    //color( this.color );
+    //}
+    //stroke(this.color);
     
     let tail = 15 ; 
     let frameNormal = ( frameCount % maxTurn ) / maxTurn ;   

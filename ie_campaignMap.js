@@ -10,16 +10,25 @@ function rgbToHex(r, g, b) {
 // https://stackoverflow.com/questions/30970648/changing-hex-codes-to-rgb-values-with-javascript
 function hexToRgb(hexColor) {
   
+  let obj = [ 255 , 0 , 0 ] ; 
   let c = hexColor.toLowerCase() ; 
   if(/^#([a-f0-9]{3}){1,2}$/.test(c))
   {
-  if(c.length== 4){
-      c= '#'+[c[1], c[1], c[2], c[2], c[3], c[3]].join('');
+    if(c.length== 4)
+    {
+        c= '#'+[c[1], c[1], c[2], c[2], c[3], c[3]].join('');
+    }
+    c= '0x'+c.substring(1);
+    obj = [ (c>>16)&255 , (c>>8)&255 , c&255 ]; 
+    //return 'rgb('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+')';
   }
-  c= '0x'+c.substring(1);
-  return 'rgb('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+')';
-  }
-  return '';
+  let color = {};
+  color.r = obj[0] ; 
+  color.g = obj[1] ; 
+  color.b = obj[2] ; 
+  print( `from ${hexColor} -> ${color.r},${color.g},${color.b}`);
+  return color ; 
+  //return '';
 }
 
 //https://stackoverflow.com/questions/13070054/convert-rgb-strings-to-hex-in-javascript
@@ -127,22 +136,46 @@ let factions = [] ;
     for (let i = 0; i < length; i++) 
     {
       let obj = {};
+      let bMatchFound = false ; 
       try 
       {
         obj.settlementId = regionData[i].getString( 'settlement_name') ;
+
+        
+        for ( let r = 0 ; r < this.regionHistory.length ; r++ )
+        {
+          let rh = this.regionHistory[r] ; 
+          if( rh.settlementId == obj.settlementId )
+          {
+            bMatchFound = true ; 
+            print('duplicate region @ ' , rh.settlementId  )
+            //break ; 
+          }
+        }
+
         obj.settlementOwnerName = regionData[i].getString( 'settlement_owner') ;
         obj.settlementFactionId = regionData[i].getString( 'factionId') ;
-        obj.minTurn = regionData[i].getNum( 'minTurn');
-        obj.maxTurn = regionData[i].getNum( 'maxTurn');
+        obj.settlementFactionType = regionData[i].getString( 'factionType' );
+        obj.minTurn = regionData[i].getNum( 'validFrom');
+        obj.maxTurn = regionData[i].getNum( 'validTo');
+        //if ( obj.settlementId == 'wh2_main_vampire_coast_pox_marsh'
+        //  || obj.settlementId == 'wh2_main_vampire_coast_the_blood_swamps' )
+        //{
+        //if ( this.regionHistory.length < 250 )
+        //{
+          this.regionHistory.push( obj );
+          print( `adding ${obj.settlementId} : ${obj.settlementOwnerName} | ${obj.minTurn} <-> ${obj.maxTurn}`); 
+        //}
       }
       catch ( error )  
       {
-        print( error ) ; 
+        print( 'ERROR ' ,  error ) ; 
       }
-      if ( obj.settlementId != null )
-      {
-        this.regionHistory.push( obj );
-      }
+      //if ( obj.settlementId != null && bMatchFound == false )
+      //{
+        //this.regionHistory.push( obj );
+        //print( `adding ${obj.settlementId} : ${obj.settlementOwnerName} | ${obj.minTurn} <-> ${obj.maxTurn}`); 
+      //}
     }
   }
 
@@ -159,18 +192,19 @@ let factions = [] ;
       obj.Id = factionData[i].getNum( 'id') ;
       obj.factionNK = factionData[i].getString( 'faction_nk' ) ; 
       obj.factionId = factionData[i].getNum( 'id')
-      let colorHex =  Math.floor(Math.random()*16777215).toString(16);
-      //print( colorHex ); 
-      obj.color = {} ; 
-      var bigint = parseInt(colorHex, 16);
-      obj.color.r = (bigint >> 16) & 255;
-      obj.color.g = (bigint >> 8) & 255;
-      obj.color.b = bigint & 255;
-      obj.hexColor = colorHex ; 
+      obj.factionType = factionData[i].getString( 'factionType' ); 
+      let colorHex =  '#' + Math.floor(Math.random()*16777215).toString(16);
+      let colorRGB = hexToRgb( colorHex ); 
+
+      obj.color = colorRGB ; 
+      //obj.colorHex = colorHex ; 
+      
       if ( obj.factionNK != null )
       {
         this.factions.push( obj );
+        //print( obj.colorHex ); 
         //print( `adding a faction ${obj.factionNK} with color (${obj.color.r},${obj.color.g},${obj.color.b}`);
+        //print( `${obj.factionNK} with (${colorRGB.r},${colorRGB.g},${colorRGB.b})`);
       }
     }
   }
@@ -221,7 +255,7 @@ let factions = [] ;
         
         print( 'factionIndex is ', factionIndex);
         let factionHexColor = this.factions[ factionIndex ].hexColor ;  
-        pathColors = generateShadesFromColor( factionHexColor , 12 ) ; 
+        pathColors = generateShadesFromColor( factionHexColor , 16 ) ; 
       }
       let namesLength = names.length ; 
       if ( names.includes(nameMap) == false )
@@ -229,11 +263,11 @@ let factions = [] ;
         names.push( nameMap);
         
         let color = "#FFCCAA"
-        if ( namesLength > pathColors.length-1 )
-        {
+        //if ( namesLength > pathColors.length-1 )
+        //{
           color = hexToRgb( '#' + Math.floor(Math.random()*16777215).toString(16) ) ;
-          print('random color for path ', color );
-        }
+          //print('random color for path ', color );
+        /*}
         else
         {
           
@@ -241,7 +275,7 @@ let factions = [] ;
           print( 'match color found' , color ) 
           let toRGB = hexToRgb( color ); 
           print( toRGB ); 
-        }
+        }*/
         let path = new ArmyPath( paths.length , color , nameMap );
         paths.push( path )
       }
@@ -320,7 +354,8 @@ let factions = [] ;
       print('heyyyy ')
       //let palette = [ '#43626F' , '#91322C', '#72A385' , '#B8BAB5' , '#151F18' ] ;
 
-      this.factions[ skryreIndex ].hexColor ='#91322C' ; 
+      this.factions[ skryreIndex ].hexColor ='#151F18' ; 
+      this.factions[ skryreIndex ].color = hexToRgb('#151F18') ; 
     }
   }
 
@@ -406,8 +441,10 @@ let factions = [] ;
                   && this.regionHistory[r].maxTurn >= turnNum )
                 {
                   isActive = true ; 
+                  //print('active!')
                   // set this on a 1x lookup for speed 
                   // nope! this fucks it up every time 
+                  
                   //if ( this.regionHistory[r].polygonColor == null )
                   //{
                     for ( let a = 0 ; a < this.factions.length ; a++ )
@@ -420,10 +457,12 @@ let factions = [] ;
                       {
                         
                         //print( 'skaven match! ' ,  this.factions[a].color  );
+                        //print ( `@ ${turnNum}, ${b_faction} owns ${this.regionHistory[r].settlementId} ${this.regionHistory[r].minTurn} <-> ${this.regionHistory[r].maxTurn} `)
                         let _color = this.factions[a].color ; 
                         this.regionHistory[r].polygonColor = _color ; 
-                        this.polygons[i].color = _color ; 
+                         
                         regionPolyColor = this.factions[a].color ; 
+                        this.polygons[i].color = regionPolyColor ;
                       }
                     }
                   //}
@@ -436,19 +475,15 @@ let factions = [] ;
             }
           }
         }
-        else
-        {
-          isActive = false ; 
-        //this.polygons[i].color.r = 15 ;
-        //this.polygons[i].color.g = 15;
-        //this.polygons[i].color.b = 15;
-        }
+        
 
       if ( isActive == true )
       {
-        /*
+        
+        
         this.polygons[i].alpha = 235 ;
         //this.polygons[i].hexColor = regionPolyHex ; 
+        /*
         if ( regionPolyHex != null)
         {
           let _hex = regionPolyHex.replaceAll('#', '');
@@ -458,8 +493,8 @@ let factions = [] ;
           this.polygons[i].color.g = (bigint >> 8) & 255;
           this.polygons[i].color.b = bigint & 255;
           print( `rgb (${this.polygons[i].color.r} , ${this.polygons[i].color.g}, ${this.polygons[i].color.b} )`)
-        }*/
-        
+        }
+        */
       
       }
       else
