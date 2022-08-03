@@ -18,7 +18,7 @@ class Polygon {
       this.points = [] ; 
       let sumX = 0 ; 
       let sumY = 0 ;
-      let skip = 2 ; 
+      let skip = 4 ; 
       for ( let i = 0 ; i < arr.length ; i+=(2*skip) )
       {
         let p = new Point( arr[i] , arr[ i + 1 ] );
@@ -38,7 +38,7 @@ class Polygon {
     draw() 
     {
       //blendMode( NORMAL ) ;
-      fill(  this.color.r , this.color.g ,this.color.b , this.alpha );
+      fill(  this.color.r , this.color.g ,this.color.b , 215 );
       //color( this.color.r , this.color.g , this.color.b );
       //color( 255 , 0 , 0 )
       //blendMode(MULTIPLY);

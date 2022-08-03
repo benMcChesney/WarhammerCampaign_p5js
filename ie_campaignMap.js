@@ -26,7 +26,7 @@ function hexToRgb(hexColor) {
   color.r = obj[0] ; 
   color.g = obj[1] ; 
   color.b = obj[2] ; 
-  print( `from ${hexColor} -> ${color.r},${color.g},${color.b}`);
+  //print( `from ${hexColor} -> ${color.r},${color.g},${color.b}`);
   return color ; 
   //return '';
 }
@@ -78,6 +78,34 @@ function generateShadesFromColor( hexColor , numShades )
   
 }
 
+function rgbToHsl(r, g, b) {
+  r /= 255, g /= 255, b /= 255;
+
+  var max = Math.max(r, g, b), min = Math.min(r, g, b);
+  var h, s, l = (max + min) / 2;
+
+  if (max == min) {
+    h = s = 0; // achromatic
+  } else {
+    var d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+
+    switch (max) {
+      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+      case g: h = (b - r) / d + 2; break;
+      case b: h = (r - g) / d + 4; break;
+    }
+
+    h /= 6;
+  }
+
+  let obj = {} ;
+  obj.h = h ; 
+  obj.s = s ; 
+  obj.l = l ; 
+  return obj ; //[ h, s, l ];
+}
+
 class Point {
   constructor( x , y )
   {
@@ -112,7 +140,7 @@ let factions = [] ;
 
   function preload() {
     //let armyPathCSV = 'assets/Fact_ARmyPath_IkitClawFaction_Test.csv';
-    let armyPathCSV = 'assets/Fact_ArmyPath.csv';
+    let armyPathCSV = 'assets/Fact_ArmyPath_all.csv';
     let factControlCSV = '../assets/Fact_SettlementControlChange_all.csv' ;
     let dimFactionsCSV = '../assets/Dim_Factions.csv' ;
     let svgPath = '../assets/ie_me_map - Copy.svg';
@@ -148,8 +176,8 @@ let factions = [] ;
           if( rh.settlementId == obj.settlementId )
           {
             bMatchFound = true ; 
-            print('duplicate region @ ' , rh.settlementId  )
-            //break ; 
+            //print('duplicate region @ ' , rh.settlementId  )
+            break ; 
           }
         }
 
@@ -164,7 +192,7 @@ let factions = [] ;
         //if ( this.regionHistory.length < 250 )
         //{
           this.regionHistory.push( obj );
-          print( `adding ${obj.settlementId} : ${obj.settlementOwnerName} | ${obj.minTurn} <-> ${obj.maxTurn}`); 
+          //print( `adding ${obj.settlementId} : ${obj.settlementOwnerName} | ${obj.minTurn} <-> ${obj.maxTurn}`); 
         //}
       }
       catch ( error )  
@@ -194,6 +222,21 @@ let factions = [] ;
       obj.factionId = factionData[i].getNum( 'id')
       obj.factionType = factionData[i].getString( 'factionType' ); 
       let colorHex =  '#' + Math.floor(Math.random()*16777215).toString(16);
+      let bContinue = true ; 
+      while( bContinue == true )
+      {
+        let colorRGB = hexToRgb( colorHex );
+        let hsb = rgbToHsl( colorRGB.r, colorRGB.g , colorRGB.b );
+        if ( hsb.b >= 125 )
+        {
+          colorHex =  '#' + Math.floor(Math.random()*16777215).toString(16);
+        }
+        else
+        {
+          bContinue = false; 
+        }
+      }
+      
       let colorRGB = hexToRgb( colorHex ); 
 
       obj.color = colorRGB ; 
@@ -209,7 +252,7 @@ let factions = [] ;
     }
   }
 
-  function getFactionById ( factionId ) 
+  function getFactionByName( factionNK ) 
   {
     if ( this.factions.length == 0 )
     {
@@ -218,8 +261,8 @@ let factions = [] ;
     }
     for ( let i = 0 ; i < this.factions.length ; i++ )
     {
-      let a = this.factions[i].factionId  ;
-      let b = factionId ;  
+      let a = this.factions[i].factionNK  ;
+      let b = factionNK ;  
       //print( `checking if ${a} == ${b} ? ${ a == b }`);
       if ( a == b )
       {
@@ -244,39 +287,33 @@ let factions = [] ;
       //generatedColors = generateShadesFromColor( palette[ p ] , 4 ) ;
       //pathColors.push( generatedColors ); 
     }
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < length; i++) 
+    {
       // Get position, diameter, name,
       //,locX,locY,
       let nameMap = pathData[i].getString("nameMappingId");
       let factionIdValue = pathData[i].getNum( "faction_id");
-      let factionIndex = getFactionById( factionIdValue ) ;
+      
+      let factionNK = pathData[i].getString('faction_nk');
+      let factionIndex = getFactionByName( factionNK ) ;
+      /*
       if ( pathColors.length == 0 )
       {
         
         print( 'factionIndex is ', factionIndex);
         let factionHexColor = this.factions[ factionIndex ].hexColor ;  
         pathColors = generateShadesFromColor( factionHexColor , 16 ) ; 
-      }
+      }*/
       let namesLength = names.length ; 
       if ( names.includes(nameMap) == false )
       {
         names.push( nameMap);
-        
-        let color = "#FFCCAA"
-        //if ( namesLength > pathColors.length-1 )
-        //{
-          color = hexToRgb( '#' + Math.floor(Math.random()*16777215).toString(16) ) ;
-          //print('random color for path ', color );
-        /*}
-        else
-        {
-          
-          color = pathColors[ namesLength ];
-          print( 'match color found' , color ) 
-          let toRGB = hexToRgb( color ); 
-          print( toRGB ); 
-        }*/
-        let path = new ArmyPath( paths.length , color , nameMap );
+        let op = this.factions[factionIndex] ; 
+        print( `getting faction '${factionNK}' @[${factionIndex}] ${this.factions[factionIndex]} ${op.color}`)
+        print( op.color )
+        print
+        //color = factions[factionIndex].color ;
+        let path = new ArmyPath( paths.length , op.color , nameMap );
         paths.push( path )
       }
 
@@ -313,10 +350,20 @@ let factions = [] ;
       paths[ i ].align_and_sort_vertices( this.maxTurn ) ; 
     }
   }
+  /*
+  P5Capture.getInstance().setDefaultOptions({
+    format: "mp4",
+    framerate: 30,
+    quality: 0.8,
+    width: 800,
+  });*/
+
   function setup() 
   {
     print( 'calling setup!');
-    createCanvas(1320 , 1080 ) ;
+   
+
+    createCanvas(1280 , 1200 ) ;
     this.turnNum = 1 ; 
     bg_image = loadImage('assets/clean_mortal_empires 1.jpg');
     
@@ -347,42 +394,77 @@ let factions = [] ;
       this.polygons[i].loadVertices( points ) ; 
     }
 
-    let skryreIndex = getFactionById( 337 ) ; 
+    let skryreIndex = getFactionByName( 'wh2_main_skv_clan_skyre' ) ; 
     if ( skryreIndex != -1 )
     {
       let a = this.factions[ skryreIndex ]; 
-      print('heyyyy ')
+      //print('heyyyy ')
       //let palette = [ '#43626F' , '#91322C', '#72A385' , '#B8BAB5' , '#151F18' ] ;
 
-      this.factions[ skryreIndex ].hexColor ='#151F18' ; 
-      this.factions[ skryreIndex ].color = hexToRgb('#151F18') ; 
+      //this.factions[ skryreIndex ].hexColor ='#151F18' ; 
+      //this.factions[ skryreIndex ].color = hexToRgb('#151F18') ; 
     }
+
+    for ( let i = 0 ; i < this.factions.length ; i++ )
+    {
+      print( ` adding faction / color ${this.factions[i].factionNK} ${rgbToString(this.factions[i].color)}`)
+    }
+    let defaultOptions = {
+      format: "mp4",
+      framerate: 30,
+      quality: 1.0,
+      width: 1280,
+      bitrate : 10000
+    }
+    //P5Capture.getInstance().start( defaultOptions ); 
+    
   }
 
+  function rgbToString( c )
+  {
+    let value = `(${c.r},${c.g},${c.b})`
+    return value ; 
+  }
   function draw() 
   {
-
+    background(0);
+    let _scaleX = 1.0;  //bg_image.height / 720.0 ; 
     let factor = 0.25 ; 
     //print( 'framecount ' + frameCount ) ; 
     let frameNormal = (( frameCount * factor ) % this.maxTurn ) / this.maxTurn ;   
-    let turnNum = floor( frameNormal * this.maxTurn ) ; 
+    //let turnNum = floor( frameNormal * this.maxTurn ) ; 
 
-    if (mouseIsPressed) {
-      let nX = floor( map( mouseX , 0 , bg_image.width , 1 , this.maxTurn ) ) ; 
-      this.turnNum = nX ; 
+  
+    let padY = bg_image.height + 5 ; 
+
+    if (mouseIsPressed ) 
+    {
+      print( `${mouseY * _scaleX } >= ${padY}` );
+      if ( ( mouseY * _scaleX )  >= padY )
+      {
+        let nX = floor( map( mouseX , 1 , bg_image.width , 1 , this.maxTurn ) ) ; 
+        this.turnNum = nX ;
+      }
+      
+       
     }
+    //this.turnNum = turnNum ; 
+ 
     check_regions( this.turnNum );
-    let _scale = 1.0;
+    
     push(); 
 
-    background(0);
+    
     
     fill(255);
     color( 255 , 255 , 255 , 255 );
-    image(bg_image, 0, 0);
+    scale( _scaleX , _scaleX );
+    image(bg_image, 0, 0, bg_image.width / _scaleX , bg_image.height / _scaleX);
     fill(255, 215);
     push();
-      scale( 0.6878 ); 
+      scale( 0.6878 , 0.6878  ); 
+      //scale( _scaleX ) 
+      
       for (let i = 0; i < this.polygons.length; i++) 
       {
         this.polygons[i].draw( )
@@ -404,6 +486,17 @@ let factions = [] ;
 
       }
     }
+    let barHeight = 40 ; 
+    stroke( 255 , 255 , 255 ) ;
+    strokeWeight( 3 ) ;
+    fill( 55, 255 , 55 ); 
+    color( 55 , 255 , 55 )
+    rect( 0 , padY, bg_image.width , barHeight );
+    stroke( 15 , 15 , 15 ) ;
+    fill( 255 , 255 , 255 ) 
+    color( 255 , 255 , 255 ) 
+    let rectPadding = 5 ;
+    rect( map( this.turnNum , 0 , this.maxTurn , 0 , bg_image.width ) - rectPadding  , padY , rectPadding * 2 , barHeight ) ; 
     pop(); 
 
     textAlign(LEFT);
@@ -413,6 +506,10 @@ let factions = [] ;
     fill( 255 )
     text( `TURN ${this.turnNum}/${this.maxTurn}`, 10 , 20);
     
+    if ( turnNum == maxTurn )
+    {
+      //P5Capture.getInstance().stop(); 
+    }
   }
 
 
@@ -445,8 +542,8 @@ let factions = [] ;
                   // set this on a 1x lookup for speed 
                   // nope! this fucks it up every time 
                   
-                  //if ( this.regionHistory[r].polygonColor == null )
-                  //{
+                  if ( this.regionHistory[r].polygonColor == null )
+                  {
                     for ( let a = 0 ; a < this.factions.length ; a++ )
                     {
                       
@@ -465,11 +562,12 @@ let factions = [] ;
                         this.polygons[i].color = regionPolyColor ;
                       }
                     }
-                  //}
-                  //else
-                  //{
-                  //  regionPolyColor = this.regionHistory[r].polygonColor ; 
-                  //}
+                  }
+                  else
+                  {
+                    regionPolyColor = this.regionHistory[r].polygonColor ;
+                    this.polygons[i].color = regionPolyColor ; 
+                  }
                   //print( `${poly_id} should be active!` )
                 }
             }
